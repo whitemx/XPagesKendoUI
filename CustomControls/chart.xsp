@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xp:view xmlns:xp="http://www.ibm.com/xsp/core">
+	<xp:this.resources>
+		<xp:script src="/chart.js" clientSide="true"></xp:script>
+		<xp:script src="/xpChart.jss" clientSide="false"></xp:script>
+	</xp:this.resources>
+
+	<xp:scriptBlock id="scriptBlock1"
+		value="#{javascript:getChartData()}">
+	</xp:scriptBlock>
+
+	<div id="example" class="k-content">
+		<div class="chart-wrapper">
+			<div id="chart"
+				style="background: center no-repeat url('world-map.png');">
+			</div>
+		</div>
+	</div>
+</xp:view>

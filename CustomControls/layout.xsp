@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xp:view xmlns:xp="http://www.ibm.com/xsp/core">
+
+	<xp:this.resources>
+		<xp:styleSheet href="/kendo.common.min.css"></xp:styleSheet>
+		<xp:styleSheet href="/kendo.default.min.css"></xp:styleSheet>
+		<xp:script src="/jquery.min.js" clientSide="true"></xp:script>
+		<xp:script src="/kendo.all.min.js" clientSide="true"></xp:script>
+		<xp:script src="/common.js" clientSide="true"></xp:script>
+		<xp:styleSheet href="/site.css"></xp:styleSheet>
+	</xp:this.resources>
+
+	<ul id="menu">
+		<li>
+			Contacts
+			<ul>
+				<li>
+					<xp:link escape="true" text="Grid" id="firstnamelink"
+						value="/home.xsp">
+					</xp:link>
+				</li>
+				<li>
+					<xp:link escape="true" text="By Country" id="countrylink"
+						value="/country.xsp">
+					</xp:link>
+				</li>
+			</ul>
+		</li>
+		<li>
+			<xp:link escape="true" text="New Contact" id="contactlink"
+				value="/contact.xsp">
+			</xp:link>
+		</li>
+	</ul>
+	<xp:callback facetName="facet_1" id="callback1"></xp:callback>
+
+</xp:view>
